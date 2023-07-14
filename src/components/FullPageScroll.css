@@ -1,0 +1,38 @@
+.full-page-scroll {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .section-1 {
+    background-color: black;
+    color: yellow;
+  }
+  
+  .section-2 {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .section-3 {
+    background-color: black;
+    color: yellow;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
