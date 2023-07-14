@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,13 +18,14 @@ body {
   left: 0;
   width: 100%;
   height: 100px;
-  background-color: pink;
+  background-color: rgb(253, 214, 221);
   color: black;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 100;
+  border: #000 2px solid;
 }
 
 .logo {
@@ -31,22 +36,39 @@ body {
 .nav-links {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 30px;
   display: flex;
 }
 
 .nav-links li {
-  margin-left: 10px;
+  margin-left: 15px;
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
 }
+
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  height: 80%;
+  width: 2px;
+  background-color: black;
+}
+
 
 .nav-links a {
   color: #000;
   text-decoration: none;
   transition: color 0.3s;
+  font-weight: 800;
+  font-size: 30px;
 }
 
 .nav-links a:hover {
-  color: white;
+  color: rgb(150, 134, 134);
 }
 
 .section {
@@ -56,21 +78,28 @@ body {
   height: 100vh;
 }
 
-.section1 {
-  background-color: black;
-  color: yellow;
+.about {
+  color: rgb(29, 27, 27);
+  background-color: rgb(253, 214, 221);
 }
 
-.section2 {
+.projects {
   background-color: black;
-  color: yellow;
+  color: rgb(253, 214, 221);
 }
 
-.section3 {
-  background-color: black;
-  color: yellow;
+.contact {
+  background-color: rgb(253, 214, 221);
+  color: black;
 }
+
+
 
 h1 {
   font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+  
 }
